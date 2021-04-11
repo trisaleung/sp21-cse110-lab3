@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <title>three day journal</title>
+        <meta name="keywords" content="to-do, highlights, journal"/>
+        <link rel="icon" href = "./media/favicon.png"/>
+    </head>
+    <body>
+        <header>
+            <h1>three day journal <span><i>by tris</i></span></h1>
+        </header>
+
+        <main>
+            <section>
+                <h2><em>navigation</em></h2>
+                <nav>
+                    <ol>
+                        <li><a href="#day-one">day one</a></li>
+                        <li><a href="#day-two">day two</a></li>
+                        <li><a href="#day-three">day three</a></li>
+                    </ol>
+                </nav>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2 id="day-one"><em>april 8, 2021</em></h2>
+                <h3>to-do</h3>
+                <div>
+                    <ul>
+                        <li>attend <b>vp development</b> interviws [acm]</li>
+                        <li>walk the dog [chores]</li>
+                        <details>
+                            <summary>note</summary>
+
+                            <p>if he stops and sits down, wait until he gets back up.</p>
+                        </details>
+                        <li>schedule haircut [fun]</li>
+                    </ul>
+                </div>
+
+                <h3>highlights</h3>
+                <div>
+                    <strong>walk</strong>
+                    <p>earl grey tripped over the edge of the sidewalk</p>
+
+                    <br />
+                    <strong>during interviews</strong>
+                    <p>someone climbed onto the desk, and this was his face afterwards</p>
+                    <img src="./media/earlgrey.jpg" />
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2 id="day-two"><em>april 9, 2021</em></h2>
+                <h3>to-do</h3>
+                <div>
+                    <ul>
+                        <li>interview <b>vp external</b> candidates [acm]</li>
+                        <details>
+                            <summary>remember these!!</summary>
+
+                            <p><b>things to do:</b> come up with questions to ask candidates!!</p>
+                            <p>might want to ask about time commitment/ideas.</p>
+                        </details>
+                        <li>walk the dog [chores]</li>
+                        <li>finish cardigan [fun]</li>
+                    </ul>
+                </div>
+
+                <h3>highlights</h3>
+                <div>
+                    <strong>walk (again)</strong>
+                    <p>earl grey refused to walk...</p>
+                    
+                    <br />
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2 id="day-three"><em>april 10, 2021</em></h2>
+                <h3>to-do</h3>
+                <div>
+                    <ul>
+                        <li>attend <b>vp events + finance</b> interviews [acm]</li>
+                        <li>walk the dog [chores]</li>
+                        <li>order sushi for sister [chores]</li>
+                    </ul>
+                </div>
+
+                <h3>highlights</h3>
+                <div>
+                    <strong>more dog stuff</strong>
+                    <p>earl grey got scared of the tennis ball for some reason?</p>
+                    <video controls>
+                        <source src="./media/recorded-6506712473004.mp4 " type="video/mp4"/>
+                    </video>
+
+                    <br />
+
+                    <strong>music to listen to while studying</strong>
+                    <p>found this while scrolling through piano music</p>
+
+                    <audio controls>
+                        <source src="./media/study music [1 hr].mp3" type="audio/mp3" />
+                    </audio>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h2><em>make your own entry!</em></h2>
+                <form id="journal">
+                    <fieldset>
+                        <legend>section header</legend>
+                        <label for="date">date: </label>
+                        <input type="date" id="date"/><br><br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>to-dos</legend>
+                        <label for="include-to-dos">do you want to have to-dos?</label><br><br>
+                        <div>
+                            <input type="radio" id="yes-to-dos" name="to-dos" value="yes" checked>
+                            <label for="yes-to-dos">yes</label>
+
+                            <input type="radio" id="no-to-dos" name="to-dos" value="no">
+                            <label for="no-to-dos">no</label>
+                        </div>
+
+                        <label for="entry">entry</label>
+                        <input type="text" id="entry" placeholder="what do you need to do?" />
+                        <br>
+
+                        <label for="task-type">pick a task type:</label><br>
+                        <input list="categories">
+                        <datalist id="categories">
+                            <option value="acm">
+                            <option value="chores">
+                            <option value="schoolwork">
+                            <option value="fun">
+                            <option value="work">
+                        </datalist>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>highlights</legend>
+                        <label for="include-highlights">do you want to have highlights?</label><br><br>
+                        <div>
+                            <input type="radio" id="yes-highlights" name="highlights" value="yes" checked>
+                            <label for="yes-highlights">yes</label>
+
+                            <input type="radio" id="no-highlights" name="highlights" value="no">
+                            <label for="no-highlights">no</label>
+                        </div>
+
+                        <label for="entryh">entry title:</label>
+                        <input type="text" id="entryh" placeholder="highlights here!" /><br><br>
+
+                        <label for="entry-text">entry text:</label><br>
+                        <textarea id="entry-text-words" name="words" rows="4" cols="50">highlight description here!</textarea>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>extra uploads</legend>
+                        <label for="uploads">what other uploads do you want to include?</label>
+                        <div>
+                            <input type="checkbox" id="music" name="music" value="music">
+                            <label for="music">music</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="image" name="image" value="image">
+                            <label for="image">image</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="video" name="video" value="video">
+                            <label for="video">video</label>
+                        </div>
+                    </fieldset>
+
+                <button type="submit" form="journal" value="submit">submit</button>
+                </form>
+                  
+            </section>
+        </main>
+
+        <footer>
+            <label for="location">choose location on page to add</label>
+            <select id="location" name="locationlist" form="journal">
+                <option value="top">top</option>
+                <option value="middle">middle</option>
+                <option value="bottom">bottom</option>
+            </select>
+        </footer>
+    </body>
+</html>
