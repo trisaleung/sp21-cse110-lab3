@@ -1,0 +1,141 @@
+/* header styles */
+h1 {
+    color: rgb(41, 64, 63);
+    font-size: 5vh;
+    margin-left: 5vw;
+    text-align: center;
+    font-family: "Lora";
+}
+
+h2 {
+    color: #588180;
+    font-size: 4vh;
+    margin-left: 4vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    font-family: "Lora";
+}
+
+h3 { /* shorthand for margin and padding */
+    color: hsl(178, 35%, 55%);
+    font-size: 3vh;
+    margin: 0pc 0pc 0pc 2pc;
+    padding: 3mm 3mm 3mm 3mm;
+    font-family: "Lora";
+}
+
+header { /* box! */
+    background-color: #AAB5BD;
+    border-style: dotted;
+    border-color: rgb(91, 67, 92);
+    border-width: 1px;
+    border-radius: 1em;
+    padding: 2em;
+    margin: auto;
+    width: 94vw;
+    position: absolute;
+    font-family: "Lora";
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        background-color: #748f9b;
+    }
+  }
+
+/* nav */
+.nav_header {
+    margin-top: 4em;
+}
+
+.flex_link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: "Lato";
+}
+
+a {
+    background:
+    linear-gradient(
+      to bottom, #748f9b 0%,
+      #748f9b 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  text-decoration: none;
+  color: #2e333d;
+  transition: background-size 0.5s;
+  padding: 3px;
+}
+
+a:hover {
+    background-size: 4px 50px;
+    color: white;
+}
+
+a:active {
+    background: #E0E0E0;
+}
+
+.nav_link {
+    margin-left: 1em;
+    display: inline-block;
+    flex-grow: 1;
+    text-transform: uppercase;
+}
+
+/* testing something */
+.testing {
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* daily entries styles */
+section {
+    font-family: "Lato";
+}
+
+/* highlight grid */
+.highlight_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    font-family: "Lato";
+}
+
+/* media styles */
+.highlight-pic {
+    height: 50vh;
+    min-width: 20vw;
+}
+
+.highlight-video {
+    width: 25vw;
+    max-height: 100vh;
+}
+
+.audio-highlight {
+    z-index: 0;
+}
+
+/* form */
+#journal {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    font-family: "Lato";
+}
+
+.footer {
+    margin-bottom: 10vh;
+    margin-left: 10vh;
+    font-family: "Lato";
+}
