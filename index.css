@@ -1,10 +1,13 @@
+* {
+    font-family: "Lora";
+}
+
 /* header styles */
 h1 {
     color: rgb(41, 64, 63);
     font-size: 5vh;
     margin-left: 5vw;
     text-align: center;
-    font-family: "Lora";
 }
 
 h2 {
@@ -16,7 +19,6 @@ h2 {
     padding-top: 5px;
     padding-bottom: 5px;
     display: block;
-    font-family: "Lora";
 }
 
 h3 { /* shorthand for margin and padding */
@@ -24,20 +26,21 @@ h3 { /* shorthand for margin and padding */
     font-size: 3vh;
     margin: 0pc 0pc 0pc 2pc;
     padding: 3mm 3mm 3mm 3mm;
-    font-family: "Lora";
+}
+
+h1, h2, h3 {
+    text-decoration: underline;
 }
 
 header { /* box! */
     background-color: #AAB5BD;
-    border-style: dotted;
-    border-color: rgb(91, 67, 92);
-    border-width: 1px;
-    border-radius: 1em;
     padding: 2em;
     margin: auto;
     width: 94vw;
     position: absolute;
-    font-family: "Lora";
+    right: 0;
+    top: 0;
+    left: 0;
 }
 
 @media only screen and (max-width: 600px) {
@@ -55,7 +58,6 @@ header { /* box! */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-family: "Lato";
 }
 
 a {
@@ -97,9 +99,30 @@ a:active {
     z-index: 2;
 }
 
-/* daily entries styles */
-section {
-    font-family: "Lato";
+/* to-do lists */
+li[target=_important] {
+    color: #689C88;
+}
+
+/* combinators */ 
+section p {
+    padding: 3em;
+} 
+
+section > div {
+    padding: 1em;
+}
+
+h2 + h3 {
+    margin-bottom: -2em;
+}
+
+h2 ~ h3 {
+    color: #63736D;
+}
+
+p.combined {
+    color: #77b6bf;
 }
 
 /* highlight grid */
@@ -109,18 +132,25 @@ section {
     margin-left: 5vw;
     margin-right: 5vw;
     margin-bottom: 5vh;
-    font-family: "Lato";
 }
 
 /* media styles */
 .highlight-pic {
     height: 50vh;
     min-width: 20vw;
+    border-style: dotted;
+    border-color: rgb(91, 67, 92);
+    border-width: 1px;
+    border-radius: 1em;
 }
 
 .highlight-video {
     width: 25vw;
     max-height: 100vh;
+    border-style: dotted;
+    border-color: rgb(91, 67, 92);
+    border-width: 1px;
+    border-radius: 1em;
 }
 
 .audio-highlight {
@@ -131,11 +161,9 @@ section {
 #journal {
     margin-left: 10vh;
     margin-right: 10vh;
-    font-family: "Lato";
 }
 
 .footer {
     margin-bottom: 10vh;
     margin-left: 10vh;
-    font-family: "Lato";
 }
