@@ -4,21 +4,27 @@
         <title>three day journal</title>
         <meta name="keywords" content="to-do, highlights, journal"/>
         <link rel="icon" href = "./media/favicon.png"/>
+        <link rel="stylesheet" href = "./index.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
     </head>
     <body>
         <header>
             <h1>three day journal <span><i>by tris</i></span></h1>
         </header>
 
+        <img src="./media/favicon.png" class="testing"/>
+
         <main>
             <section>
-                <h2><em>navigation</em></h2>
+                <h2 class="nav_header"><em>navigation</em></h2>
                 <nav>
-                    <ol>
-                        <li><a href="#day-one">day one</a></li>
-                        <li><a href="#day-two">day two</a></li>
-                        <li><a href="#day-three">day three</a></li>
-                    </ol>
+                    <ul class="flex_link">
+                        <li class="nav_link"><a href="#day-one">day one</a></li>
+                        <li class="nav_link"><a href="#day-two">day two</a></li>
+                        <li class="nav_link"><a href="#day-three">day three</a></li>
+                    </ul>
                 </nav>
             </section>
 
@@ -28,33 +34,30 @@
                 <h2 id="day-one"><em>april 8, 2021</em></h2>
                 <h3>to-do</h3>
                 <div>
-                    <ul>
+                    <ol>
                         <li>attend <b>vp development</b> interviws [acm]</li>
                         <li>walk the dog [chores]</li>
                         <li>schedule haircut [fun]</li>
-                    </ul>
+                    </ol>
                 </div>
 
                 <h3>highlights</h3>
-                <div>
-                    <strong>walk</strong>
-                    <p>earl grey tripped over the edge of the sidewalk</p>
-                    <details>
-                        <summary>note</summary>
+                <div class="highlight_grid">
+                    <div>
+                        <strong>walk</strong>
+                        <p>earl grey tripped over the edge of the sidewalk</p>
+                        <details>
+                            <summary>note</summary>
+    
+                            <p>if he stops and sits down, wait until he gets back up.</p>
+                        </details>
+                    </div>
 
-                        <p>if he stops and sits down, wait until he gets back up.</p>
-                    </details>
-
-                    <details>
-                        <summary>note</summary>
-
-                        <p>if he stops and sits down, wait until he gets back up.</p>
-                    </details>
-
-                    <br />
-                    <strong>during interviews</strong>
-                    <p>someone climbed onto the desk, and this was his face afterwards</p>
-                    <img src="./media/earlgrey.jpg" alt="./media/favicon.png"/>
+                    <div>
+                        <strong>during interviews</strong>
+                        <p>someone climbed onto the desk, and this was his face afterwards</p>
+                        <img src="./media/earlgrey.jpg" alt="./media/favicon.png" class = "highlight-pic"/>
+                    </div>
                 </div>
             </section>
 
@@ -64,19 +67,29 @@
                 <h2 id="day-two"><em>april 9, 2021</em></h2>
                 <h3>to-do</h3>
                 <div>
-                    <ul>
+                    <ol>
                         <li>interview <b>vp external</b> candidates [acm]</li>
                         <li>walk the dog [chores]</li>
                         <li>finish cardigan [fun]</li>
-                    </ul>
+                    </ol>
                 </div>
 
                 <h3>highlights</h3>
-                <div>
-                    <strong>walk (again)</strong>
-                    <p>earl grey refused to walk...</p>
-                    
-                    <br />
+                <div class="highlight_grid">
+                    <div>
+                        <strong>walk (again)</strong>
+                        <p>earl grey refused to walk...</p>
+                    </div>
+
+                    <div>
+                        <strong>crochet</strong>
+                        <p>found a new pattern!</p>
+                    </div>
+
+                    <div>
+                        <strong>phone battery</strong>
+                        <p>look into getting portable batteries maybe?</p>
+                    </div>
                 </div>
             </section>
 
@@ -86,29 +99,31 @@
                 <h2 id="day-three"><em>april 10, 2021</em></h2>
                 <h3>to-do</h3>
                 <div>
-                    <ul>
+                    <ol>
                         <li>attend <b>vp events + finance</b> interviews [acm]</li>
                         <li>walk the dog [chores]</li>
                         <li>order sushi for sister [chores]</li>
-                    </ul>
+                    </ol>
                 </div>
 
                 <h3>highlights</h3>
-                <div>
-                    <strong>more dog stuff</strong>
-                    <p>earl grey got scared of the tennis ball for some reason?</p>
-                    <video controls>
-                        <source src="./media/recorded-6506712473004.mp4 " type="video/mp4"/>
-                    </video>
+                <div class="highlight_grid">
+                    <div>
+                        <strong>more dog stuff</strong>
+                        <p>earl grey got scared of the tennis ball for some reason?</p>
+                        <video controls class="highlight-video">
+                            <source src="./media/recorded-6506712473004.mp4 " type="video/mp4"/>
+                        </video>
+                    </div>
 
-                    <br />
+                    <div>
+                        <strong>music to listen to while studying</strong>
+                        <p>adeptus' solace !!</p>
 
-                    <strong>music to listen to while studying</strong>
-                    <p>adeptus' solace !!</p>
-
-                    <audio controls>
-                        <source src="./media/adeptus-solace.mp3" type="audio/mp3" />
-                    </audio>
+                        <audio controls class="audio-highlight">
+                            <source src="./media/adeptus-solace.mp3" type="audio/mp3" />
+                        </audio>
+                    </div>
                 </div>
             </section>
 
@@ -190,7 +205,7 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="footer">
             <label for="location">choose location on page to add</label>
             <select id="location" name="locationlist" form="journal">
                 <option value="top">top</option>
